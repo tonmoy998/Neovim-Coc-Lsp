@@ -26,7 +26,8 @@ Advanced front-end setup for Neovim with php support
 ### Installation
 Give it a try.You will love it.
 > **Warning**
-> THis COMMANDS ARE FOR LINUX ONLY 
+> THis COMMANDS ARE FOR LINUX ONLY
+
 Step 1.Save your existance neovim config
   ```sh
 mv ~/.config/nvim/ ~/.config/nvim.bak.1
