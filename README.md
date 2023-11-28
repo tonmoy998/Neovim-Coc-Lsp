@@ -17,12 +17,11 @@ Advanced front-end setup for Neovim with php support
 
 ![Alt Text](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/dash.png)
 ## Features 
-* [![Html][]]
-* [![Emmet][]]
-* [![Css][]]
-* [![Bootstrap][Bootstrap.com]]
-* [![JQuery][JQuery.com]]
-*[![Php][php.com]]
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=html,css,javascript,php,python,lua,vim" />
+  </a>
+</p>
 
 ### Installation
 Give it a try.You will love it.
