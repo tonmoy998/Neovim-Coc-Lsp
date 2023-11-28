@@ -64,6 +64,7 @@ Many familiar mapping patterns are set up as defaults.
 | `<leader>fc`   | Live colorschemes                                    |
 Happy Coding.
 
+### File Structure
 <pre>
 ~/.config/nvim
 ├── init.lua
