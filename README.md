@@ -3,7 +3,7 @@ Advanced front-end setup for Neovim with php support
 <h3 align="center">Neovim Coc LSP</h3>
 
 <p align="center">
-    An awesome README template to jumpstart your projects!
+    An awesome combinations of plugins for you web development projects with html,css,bootstrap,javascript and php support.Extra bonus :Python,Lua 
     <br />
     <a href=""><strong>Explore the docs »</strong></a>
     <br />
