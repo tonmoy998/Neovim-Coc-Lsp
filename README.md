@@ -38,7 +38,10 @@ Step 3.Move to your config path
  ```sh
 cd Neovim-Coc-Lsp && mv nvim ~/.config/
   ```
-
+Now you are ready to go.Enter nvim in the terminal and it will automatically install dependencies!
+ ```sh
+nvim
+  ```
 ### Screenshots 
 * DashBoard
 ![Dash Board](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/dash.png)
