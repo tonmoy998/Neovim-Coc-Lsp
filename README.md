@@ -44,6 +44,18 @@ Now you are ready to go.Enter nvim in the terminal and it will automatically ins
  ```sh
 nvim
   ```
+### Basic Usage 
+<space> = Leader Key
+<C-s> = Save
+<C-q> = Quit
+<C-d> = Delete Current Buffer 
+<leader><space> = find files
+<leader>e = Toggle File System 
+<C-t> = Open Terminal 
+<leader>r = Runs current Project 
+Happy Coding.
+
+
 ### Screenshots 
 * DashBoard
 ![Dash Board](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/dash.png)
