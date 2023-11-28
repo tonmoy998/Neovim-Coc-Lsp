@@ -8,7 +8,7 @@ Advanced front-end setup for Neovim with php support
     <a href=""><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="">View Demo</a>
+    <a href="">Screenshots</a>
     ·
     <a href="">Report Bug</a>
     ·
@@ -88,8 +88,10 @@ Happy Coding.
 * Css
 ![Dash Board](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/css.png)
 
+
 * Color Picker
 ![Dash Board](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/colorPicker.png)
+
 
 * Bootstrap Classes
 ![Bootstrap Classes](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/bootstrapClass.png)
