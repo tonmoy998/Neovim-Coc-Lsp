@@ -44,21 +44,30 @@ mv nvim ~/.config/
 ![Dash Board](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/dash.png)
 * Css
 ![Dash Board](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/css.png)
+
 * Color Picker
 ![Dash Board](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/colorPicker.png)
+
 * Bootstrap Classes
 ![Bootstrap Classes](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/bootstrapClass.png)
-Javascript
+
+* Javascript
 ![Dash Board](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/javascript.png)
-Php
+
+* Php
 ![Dash Board](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/phpLSP.png)
-Dap
+
+* Dap
 ![Dash Board](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/dap.png)
-Telescope
+
+* Telescope
 ![Dash Board](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/telescope.png)
-Python
+
+* Python
 ![Dash Board](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/python.png)
-Code Runner
+
+* Code Runner
 ![Dash Board](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/coderunner.png)
-Live Theme Changing support
+
+* Live Theme Changing support
 ![Dash Board](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/live-themes.png)
