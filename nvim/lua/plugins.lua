@@ -19,6 +19,33 @@ return {
     tag = "0.1.3",
     -- or                              , branch = '0.1.x',
     dependencies = { "nvim-lua/plenary.nvim" },
+    config = function()
+      require("telescope").setup {
+        extensions = {
+          ["ui-select"] = {
+            require("telescope.themes").get_dropdown {
+              -- even more opts
+            }
+
+            -- pseudo code / specification for writing custom displays, like the one
+            -- for "codeactions"
+            -- specific_opts = {
+            --   [kind] = {
+            --     make_indexed = function(items) -> indexed_items, width,
+            --     make_displayer = function(widths) -> displayer
+            --     make_display = function(displayer) -> function(e)
+            --     make_ordinal = function(e) -> string
+            --   },
+            --   -- for example to disable the custom builtin "codeactions" display
+            --      do the following
+            --   codeactions = false,
+            -- }
+          }
+        }
+      }
+      -- To get ui-select loaded and working with telescope, you need to call
+      -- load_extension, somewhere after setup function:
+    end
   },
   {
     "nvim-neo-tree/neo-tree.nvim",
@@ -79,9 +106,14 @@ return {
   { "https://github.com/tpope/vim-commentary" },
   { "https://github.com/tc50cal/vim-terminal" },
   { "https://github.com/ap/vim-css-color" },
-  { "karb94/neoscroll.nvim" },
-  { 'terryma/vim-multiple-cursors',           lazy = true },
-  { 'mg979/vim-visual-multi',                 branch = 'master' },
+  {
+    "karb94/neoscroll.nvim",
+    config = function()
+      require("neoscroll").setup()
+    end
+  },
+  { 'terryma/vim-multiple-cursors',   lazy = true },
+  { 'mg979/vim-visual-multi',         branch = 'master' },
   { "rbgrouleff/bclose.vim" },
   { "francoiscabrol/ranger.vim" },
   { "prabirshrestha/asyncomplete.vim" },
@@ -113,6 +145,9 @@ return {
   { "catppuccin/nvim",                 name = "catppuccin", priority = 1000 },
   {
     'nvim-lualine/lualine.nvim',
+    config = function()
+      require('lualine').setup()
+    end,
     dependencies = { 'nvim-tree/nvim-web-devicons', opt = true }
   },
   {
@@ -186,8 +221,13 @@ return {
       return opts
     end,
   },
-  { "https://github.com/brenoprata10/nvim-highlight-colors" },
-  { 'yaegassy/coc-intelephense',                            build = "yarn install --frozen-lockfile" },
+  {
+    "https://github.com/brenoprata10/nvim-highlight-colors",
+    config = function()
+      require('nvim-highlight-colors').setup {}
+    end
+  },
+  { 'yaegassy/coc-intelephense', build = "yarn install --frozen-lockfile" },
   {
     "folke/which-key.nvim",
     event = "VeryLazy",
@@ -215,5 +255,18 @@ return {
     config = function()
       require('toggleterm').setup()
     end
+  },
+  {
+    'nvim-telescope/telescope-ui-select.nvim'
+
   }
 }
+-- {
+--     'stevearc/dressing.nvim',
+--     lazy = true,
+--     opts = {},
+--     config = function()
+--       require("dressing").setup()
+--     end
+
+--   },

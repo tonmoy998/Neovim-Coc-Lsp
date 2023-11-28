@@ -20,6 +20,7 @@ vim.keymap.set("n", "<leader>fb", builtin.buffers, {})
 vim.keymap.set("n", "<leader>fh", builtin.help_tags, {})
 
 vim.cmd([[
+nnoremap Y "+yy
 set cursorline
 set nowrap
 set tabstop=4
@@ -28,6 +29,7 @@ set smarttab
 set softtabstop=2
 colorscheme tokyonight-night
 nnoremap <S-k> :bnext<CR>
+nnoremap <C-d> :bd!<CR>
 nnoremap <TAB> :bnext<CR>
 nnoremap <S-j> :bprev<CR>
 
@@ -35,17 +37,6 @@ let g:python3_host_prog = '/usr/bin/python3.10'
 let g:pydocstring_doq_path = '/usr/bin/pydoc3.10'
 set number
 set relativenumber
-augroup code_exec
-  autocmd!
-autocmd FileType python nnoremap <buffer> <F5> :FloatermNew --autoclose=0 python3 % <CR>
-autocmd FileType javascript nnoremap <buffer> <F5> :FloatermNew --autoclose=0 nodejs % <CR>
-autocmd FileType bash,sh nnoremap <buffer> <F5> :FloatermNew --autoclose=0 bash % <CR>
-autocmd FileType lua nnoremap <buffer> <F5> :FloatermNew --autoclose=0 lua % <CR>
-autocmd FileType lua nnoremap <buffer> <F5> :FloatermNew --autoclose=0 love .<CR>
-autocmd FileType html,css,scss,less nnoremap <buffer> <F5> :term live-server<CR>
-autocmd FileType php nnoremap <buffer> <F5> :term phpserver<CR>
-" autocmd FileType python nnoremap <buffer> <F12> :FloatermNew --autoclose=0 python3 % <CR>
-augroup END
 inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<TAB>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <cr>    pumvisible() ? asyncomplete#close_popup() : "\<cr>"
