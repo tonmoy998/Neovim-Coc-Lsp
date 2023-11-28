@@ -15,11 +15,11 @@ Advanced front-end setup for Neovim with php support
     <a href="">Request Feature</a>
 </p>
 
-![Alt Text](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/dash.png)
+![Dash Board](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/dash.png)
 ## Features 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=html,css,javascript,php,python,lua,vim" />
+    <img src="https://skillicons.dev/icons?i=html,css,bootstrap,javascript,php,python,lua,vim" />
   </a>
 </p>
 
@@ -38,3 +38,27 @@ Step 3.Move to your config path
  ```sh
 mv nvim ~/.config/
   ```
+
+### Screenshots 
+* DashBoard
+![Dash Board](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/dash.png)
+* Css
+![Dash Board](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/css.png)
+* Color Picker
+![Dash Board](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/colorPicker.png)
+* Bootstrap Classes
+![Bootstrap Classes](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/bootstrapClass.png)
+Javascript
+![Dash Board](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/javascript.png)
+Php
+![Dash Board](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/phpLSP.png)
+Dap
+![Dash Board](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/dap.png)
+Telescope
+![Dash Board](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/telescope.png)
+Python
+![Dash Board](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/python.png)
+Code Runner
+![Dash Board](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/coderunner.png)
+Live Theme Changing support
+![Dash Board](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/live-themes.png)
