@@ -44,17 +44,38 @@ Now you are ready to go.Enter nvim in the terminal and it will automatically ins
  ```sh
 nvim
   ```
-### Basic Usage 
-<space> = Leader Key
-<C-s> = Save
-<C-q> = Quit
-<C-d> = Delete Current Buffer 
-<leader><space> = find files
-<leader>e = Toggle File System 
-<C-t> = Open Terminal 
-<leader>r = Runs current Project 
+## Default Mappings
+
+Mappings are fully customizable.
+Many familiar mapping patterns are set up as defaults.
+
+| Mappings       | Action                                               |
+|----------------|------------------------------------------------------|
+| `<C-s>`        | Save File                                            |
+| `<C-q>`        | Quit IDE                                             |
+| `j/k`          | Next/previous lines                                  |
+| `<C-t>`        | Open Terminal                                        |
+| `<leader>e`    | Toggle File System                                   |
+| `<C-d>`        | Delete Current Buffer                                |
+|`<leader><space>`| Find Files                                          |
+| `<S-k>`        | Scroll right in next buffer                          |
+| `<S-j>`        | Scroll left in previous buffer                       |
+| `<leader>r`    | Runs current project                                 |
+| `<leader>fc`   | Live colorschemes                                    |
 Happy Coding.
 
+<pre>
+~/.config/nvim
+├── init.lua
+└── lua
+    ├── autocmds.lua
+    ├── keymap.lua [Default Keymaps]
+    ├── lazy-config.lua
+    ├── noiceCon.lua
+    ├── plugins.lua
+    ├── telescopeConf.lua
+    └── TelescopeIcon.lua
+</pre>
 
 ### Screenshots 
 * DashBoard
