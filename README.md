@@ -36,7 +36,7 @@ git clone https://github.com/tonmoy998/Neovim-Coc-Lsp
   ```
 Step 3.Move to your config path 
  ```sh
-mv Neovim-Coc-Lsp nvim  && mv nvim ~/.config/
+cd Neovim-Coc-Lsp && mv nvim ~/.config/
   ```
 
 ### Screenshots 
