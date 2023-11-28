@@ -74,3 +74,6 @@ nvim
 
 * Live Theme Changing support
 ![Dash Board](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/live-themes.png)
+
+
+### Special Thanks To All Neovim Contributers Who Made Neovim At The Top. 
