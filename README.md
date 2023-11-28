@@ -48,9 +48,13 @@ nvim
 
 Mappings are fully customizable.
 Many familiar mapping patterns are set up as defaults.
-
+C stands for 'Ctrl' key. 
+S stands for 'shift' key.
+<leader> stands for space key.
+<c-e> stands for "Ctrl" key along with the "e" key.
 | Mappings       | Action                                               |
 |----------------|------------------------------------------------------|
+| `<space>`      | Leader Key                                           |
 | `<C-s>`        | Save File                                            |
 | `<C-q>`        | Quit IDE                                             |
 | `j/k`          | Next/previous lines                                  |
