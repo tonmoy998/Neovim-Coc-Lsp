@@ -67,7 +67,6 @@ return {
     "neoclide/coc.nvim",
     branch = "release",
   },
-  { "jiangmiao/auto-pairs" },
   {
     "folke/tokyonight.nvim",
     lazy = false,
@@ -77,6 +76,18 @@ return {
   {
     "folke/noice.nvim",
     event = "VeryLazy",
+    config = function()
+      require("noice").setup({
+        views = {
+          cmdline_popup = {
+            border = {
+              style = "single",
+            },
+            filter_options = {},
+          },
+        },
+      })
+    end,
     opts = {
       -- add any options here
     },
@@ -105,7 +116,21 @@ return {
   { "http://github.com/tpope/vim-surround" },
   { "https://github.com/tpope/vim-commentary" },
   { "https://github.com/tc50cal/vim-terminal" },
-  { "https://github.com/ap/vim-css-color" },
+  {
+    "nvchad/nvim-colorizer.lua",
+    event = { "BufReadPre", "BufNewFile" },
+    config = function()
+      require('colorizer').setup {
+        user_default_options = {
+          RRGGBBAA = true, -- #RRGGBBAA hex codes
+          rgb_fn   = true, -- CSS rgb() and rgba() functions
+          hsl_fn   = true, -- CSS hsl() and hsla() functions
+          css      = true, -- Enable all CSS features: rgb_fn, hsl_fn, names, RGB, RRGGBB
+          css_fn   = true, -- Enable all CSS *functions*: rgb_fn, hsl_fn
+        },
+      }
+    end,
+  },
   {
     "karb94/neoscroll.nvim",
     config = function()
@@ -221,12 +246,12 @@ return {
       return opts
     end,
   },
-  {
-    "https://github.com/brenoprata10/nvim-highlight-colors",
-    config = function()
-      require('nvim-highlight-colors').setup {}
-    end
-  },
+  -- {
+  --   "https://github.com/brenoprata10/nvim-highlight-colors",
+  --   config = function()
+  --     require('nvim-highlight-colors').setup {}
+  --   end
+  -- },
   { 'yaegassy/coc-intelephense', build = "yarn install --frozen-lockfile" },
   {
     "folke/which-key.nvim",

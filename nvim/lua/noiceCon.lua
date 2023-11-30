@@ -4,14 +4,6 @@ require("noice").setup({
     -- This is a current Neovim limitation.
     enabled = false, -- enables the Noice messages UI
   },
-  popupmenu = {
-    enabled = false, -- enables the Noice popupmenu UI
-    ---@type 'nui'|'cmp'
-    backend = "nui", -- backend to use to show regular cmdline completions
-    ---@type NoicePopupmenuItemKind|false
-    -- Icons for completion item kinds (see defaults at noice.config.icons.kinds)
-    kind_icons = {}, -- set to `false` to disable icons
-  },
   notify = {
     -- Noice can be used as `vim.notify` so you can route any notification like other messages
     -- Notification messages have their level and other properties set.
@@ -21,5 +13,11 @@ require("noice").setup({
     enabled = false,
     view = "notify",
   },
-
+  -- you can enable a preset for easier configuration
+  cmdline = {
+    view = "cmdline_popup", -- view for rendering the cmdline. Change to `cmdline` to get a classic cmdline at the bottom
+    format = {
+      cmdline = { pattern = "^:", icon = " ", lang = "vim", title = "" },
+    }
+  },
 })

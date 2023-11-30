@@ -23,7 +23,7 @@ vim.cmd([[
 nnoremap Y "+yy
 set cursorline
 set nowrap
-set tabstop=4
+set tabstop=8
 set shiftwidth=2
 set smarttab
 set softtabstop=2
@@ -42,6 +42,7 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <cr>    pumvisible() ? asyncomplete#close_popup() : "\<cr>"
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
 
 
 autocmd FileType html,css,javascript,php EmmetInstall
