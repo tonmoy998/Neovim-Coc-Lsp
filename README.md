@@ -16,14 +16,21 @@ Advanced front-end setup for Neovim with php support
 </p>
 
 ![Dash Board](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/dash.png)
-## Features 
+## ✨ Features
 <p align="center">
   <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=html,css,bootstrap,javascript,php,python,lua,vim" />
   </a>
 </p>
 
-### Installation
+## ⚡️ Requirements
+
+- Neovim >= **0.8.0** (needs to be built with **LuaJIT**)
+- Git >= **2.19.0** (for partial clones support)
+- a [Nerd Font](https://www.nerdfonts.com/) **_(optional)_**
+
+
+## 📦 Installation
 Give it a try.You will love it.
 > **Warning**
 > THIS COMMANDS ARE FOR LINUX ONLY
@@ -44,7 +51,7 @@ Now you are ready to go.Enter nvim in the terminal and it will automatically ins
  ```sh
 nvim
   ```
-## Default Mappings
+###  ⌨️ Default Mappings
 
 Mappings are fully customizable.
 Many familiar mapping patterns are set up as defaults.
@@ -68,7 +75,7 @@ S stands for 'shift' key.
 | `<leader>fc`   | Live colorschemes                                    |
 Happy Coding.
 
-### File Structure
+### 📂 File Structure
 <pre>
 ~/.config/nvim
 ├── init.lua
@@ -117,5 +124,10 @@ Happy Coding.
 * Live Theme Changing support
 ![Dash Board](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/live-themes.png)
 
+## ❌ Uninstalling
 
+To uninstall, you need the following commands :
+
+- **data**: `rm -rf ~/.config/nvim && rm -rf ~/.local/share/nvim`
+- **restore** " `mv ~/.config/nvim.bak.1 ~/.config/nvim
 ### Special Thanks To All Neovim Contributers Who Made Neovim At The Top. 
