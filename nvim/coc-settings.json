@@ -1,3 +1,24 @@
 {
-    "coc.preferences.formatOnSaveFiletypes": ["*"],
+  "coc.preferences.formatOnSaveFiletypes": ["*"],
+  "suggest.floatConfig": {
+    "border": true
+  },
+  "signature.floatConfig": {
+    "border": true
+  },
+
+  "hover.floatConfig": {
+    "border": true
+  },
+  "extensions": [
+    "coc-html",
+    "coc-emmet",
+    "coc-pairs",
+    "coc-html-css-support",
+    "coc-json",
+    "coc-css",
+    "coc-tsserver",
+    "@yaegassy/coc-intelephense",
+    "coc-snippets"
+  ]
 }

@@ -6,11 +6,15 @@ return {
       local configs = require("nvim-treesitter.configs")
 
       configs.setup({
-        ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "elixir", "heex", "javascript", "html" },
+        autotag = {
+          enable = true,
+        },
+        ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "javascript", "html" },
         sync_install = false,
         highlight = { enable = true },
         indent = { enable = true },
-      })
+      }
+      )
     end,
   },
 
@@ -111,7 +115,7 @@ return {
     lazy = true,
   },
   { "KabbAmine/vCoolor.vim" },
-  { "davidhalter/jedi-vim" },
+  -- { "davidhalter/jedi-vim",                   lazy = true },
   { "alvan/vim-closetag" },
   { "http://github.com/tpope/vim-surround" },
   { "https://github.com/tpope/vim-commentary" },
@@ -204,7 +208,7 @@ return {
         hide = {
           -- this is taken care of by lualine
           -- enabling this messes up the actual laststatus setting after loading a file
-          statusline = false,
+          -- statusline = false,
         },
         config = {
           header = vim.split(logo, "\n"),
@@ -246,13 +250,7 @@ return {
       return opts
     end,
   },
-  -- {
-  --   "https://github.com/brenoprata10/nvim-highlight-colors",
-  --   config = function()
-  --     require('nvim-highlight-colors').setup {}
-  --   end
-  -- },
-  { 'yaegassy/coc-intelephense', build = "yarn install --frozen-lockfile" },
+  { 'yaegassy/coc-intelephense',              build = "yarn install --frozen-lockfile" },
   {
     "folke/which-key.nvim",
     event = "VeryLazy",
@@ -261,9 +259,6 @@ return {
       vim.o.timeoutlen = 300
     end,
     opts = {
-      -- your configuration comes here
-      -- or leave it empty to use the default settings
-      -- refer to the configuration section below
     }
   },
   {
@@ -282,16 +277,73 @@ return {
     end
   },
   {
-    'nvim-telescope/telescope-ui-select.nvim'
-
+    'https://github.com/windwp/nvim-ts-autotag',
+    config = function()
+      require('nvim-ts-autotag').setup()
+    end
+  },
+  { "https://github.com/lambdalisue/suda.vim" },
+  --- TELESCOPE IMAGE PREVIEW
+  { 'nvim-lua/popup.nvim' },
+  {
+    'nvim-telescope/telescope-media-files.nvim',
+    config = function()
+      require('telescope').load_extension('media_files')
+    end
+  },
+  {
+    "nvim-tree/nvim-tree.lua",
+    version = "*",
+    lazy = true,
+    dependencies = {
+      "nvim-tree/nvim-web-devicons",
+    },
+    config = function()
+      require("nvim-tree").setup {}
+    end,
+  },
+  {
+    "kndndrj/nvim-dbee",
+    lazy = true,
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+    },
+    build = function()
+      -- Install tries to automatically detect the install method.
+      -- if it fails, try calling it with one of these parameters:
+      --    "curl", "wget", "bitsadmin", "go"
+      require("dbee").install()
+    end,
+    config = function()
+      require("dbee").setup( --[[optional config]])
+    end,
+  },
+  {
+    'kristijanhusak/vim-dadbod-ui',
+    dependencies = {
+      { 'tpope/vim-dadbod',                     lazy = true },
+      { 'kristijanhusak/vim-dadbod-completion', ft = { 'sql', 'mysql', 'plsql' }, lazy = true },
+    },
+    cmd = {
+      'DBUI',
+      'DBUIToggle',
+      'DBUIAddConnection',
+      'DBUIFindBuffer',
+    },
+    init = function()
+      -- Your DBUI configuration
+      vim.g.db_ui_use_nerd_fonts = 1
+    end,
+  },
+  {
+    "Febri-i/auto-require",
+    opts = { ... },
+    config = function()
+      local lua_root = "~/.config/nvim/lua"
+      require("auto-require").setup({
+        dir_list = { "mote" },
+      })
+    end
   }
-}
--- {
---     'stevearc/dressing.nvim',
---     lazy = true,
---     opts = {},
---     config = function()
---       require("dressing").setup()
---     end
 
---   },
+}
