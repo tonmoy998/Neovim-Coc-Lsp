@@ -5,14 +5,6 @@ Advanced front-end setup for Neovim with php support
 <p align="center">
     An awesome combinations of plugins for your web development projects with html,css,bootstrap,javascript and php support.Extra bonus :Python,Lua 
     <br />
-    <a href=""><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="">Screenshots</a>
-    ·
-    <a href="">Report Bug</a>
-    ·
-    <a href="">Request Feature</a>
 </p>
 
 ![Dash Board](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/dash.png)
@@ -27,6 +19,7 @@ Advanced front-end setup for Neovim with php support
 
 - Neovim >= **0.8.0** (needs to be built with **LuaJIT**)
 - Git >= **2.19.0** (for partial clones support)
+- nodejs , npm (preinstalled)
 - a [Nerd Font](https://www.nerdfonts.com/) **_(optional)_**
 
 
@@ -131,3 +124,4 @@ To uninstall, you need the following commands :
 - **data**: `rm -rf ~/.config/nvim && rm -rf ~/.local/share/nvim`
 - **restore** : `mv ~/.config/nvim.bak.1 ~/.config/nvim`
 ### Special Thanks To All Neovim Contributers Who Made Neovim At The Top. 
+Collected from Lazyvim , Nv-ide , Nvchad
