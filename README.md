@@ -3,7 +3,7 @@ Advanced front-end setup for Neovim with php support
 <h3 align="center">Neovim Coc LSP</h3>
 
 <p align="center">
-    An awesome combinations of plugins for your web development projects with html,css,bootstrap,javascript and php support.Extra bonus :Python,Lua 
+    An awesome combinations of plugins for your web development projects with html,css,bootstrap,javascript and php support.Extra support:Python,Lua 
     <br />
 </p>
 
