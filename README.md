@@ -29,15 +29,15 @@ Give it a try.You will love it.
 > THIS COMMANDS ARE FOR LINUX ONLY
 
 Linux 
- ```sh
+```sh
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/tonmoy998/Neovim-Coc-Lsp/main/neovim-installer.sh)"
-  ```
+```
 
-  ```
+```
 Now you are ready to go.Enter nvim in the terminal and it will automatically install dependencies!
- ```sh
+```sh
 nvim
-  ```
+```
 ###  ⌨️ Default Mappings
 
 Mappings are fully customizable.
