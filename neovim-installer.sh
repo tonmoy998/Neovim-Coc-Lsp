@@ -15,6 +15,22 @@ for package in "${packages[@]}"; do
     fi
 done
 
+echo "Clong https://github.com/tonmoy998/Neovim-Coc-Lsp.git"
+git clone https://github.com/tonmoy998/Neovim-Coc-Lsp.git
+
+echo "Saving existance neovim"
+mv ~/.config/nvim/ ~/.config/nvim.bak.1
+
+"Setting up neovim ..."
+cd Neovim-Coc-Lsp && mv nvim ~/.config/
+
+sudo apt install unzip 
+
+"Downloading Nerd Fonts ..."
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/FiraCode.zip
+sudo unzip FiraCode.zip -d /usr/local/share/fonts/
+rm FiraCode.zip 
+
 if [ ${#uninstalled_packages[@]} -eq 0 ]; then
     echo -e "${GREEN} All packages are installed. ${NC}"
 else
