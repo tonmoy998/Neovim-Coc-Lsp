@@ -28,17 +28,11 @@ Give it a try.You will love it.
 > **Warning**
 > THIS COMMANDS ARE FOR LINUX ONLY
 
-Step 1.Save your existance neovim config
-  ```sh
-mv ~/.config/nvim/ ~/.config/nvim.bak.1
-  ```
-Step 2.Clone this project
+Linux 
  ```sh
-git clone https://github.com/tonmoy998/Neovim-Coc-Lsp
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/tonmoy998/Neovim-Coc-Lsp/main/neovim-installer.sh)"
   ```
-Step 3.Move to your config path 
- ```sh
-cd Neovim-Coc-Lsp && mv nvim ~/.config/
+
   ```
 Now you are ready to go.Enter nvim in the terminal and it will automatically install dependencies!
  ```sh
