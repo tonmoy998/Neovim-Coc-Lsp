@@ -35,7 +35,6 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/tonmoy998/Neovim-Coc-Lsp
 
 ```
 Now you are ready to go.Enter nvim in the terminal and it will automatically install dependencies!
-```sh
 nvim
 ```
 ###  ⌨️ Default Mappings
