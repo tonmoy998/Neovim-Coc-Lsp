@@ -117,4 +117,4 @@ To uninstall, you need the following commands :
 - **data**: `rm -rf ~/.config/nvim && rm -rf ~/.local/share/nvim`
 - **restore** : `mv ~/.config/nvim.bak.1 ~/.config/nvim`
 ### Special Thanks To All Neovim Contributers Who Made Neovim At The Top. 
-Collected from Lazyvim , Nv-ide , Nvchad
+Collected from Lazyvim , Nv-ide.
