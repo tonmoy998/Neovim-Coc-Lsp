@@ -28,7 +28,7 @@ Give it a try.You will love it.
 > **Warning**
 > THIS COMMANDS ARE FOR LINUX ONLY
 
-Linux 
+Linux [Debian]
 ```sh
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/tonmoy998/Neovim-Coc-Lsp/main/neovim-installer.sh)"
 ```
