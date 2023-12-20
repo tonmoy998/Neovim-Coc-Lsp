@@ -1,5 +1,5 @@
 # Neovim-Coc-Lsp
-Advanced front-end setup for Neovim with php support
+Front-end setup for Neovim with css claases , php support.
 <h3 align="center">Neovim Coc LSP</h3>
 
 <p align="center">
