@@ -7,7 +7,7 @@ Advanced front-end setup for Neovim with php support
     <br />
 </p>
 
-![Dash Board](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/dash.png)
+![Dash Board](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/dashboard.png)
 ## ✨ Features
 <p align="center">
   <a href="https://skillicons.dev">
@@ -77,7 +77,7 @@ Happy Coding.
 
 ### Screenshots 
 * DashBoard
-![Dash Board](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/dash.png)
+![Dash Board](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/dashboard.png)
 * Css
 ![Dash Board](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/css.png)
 
@@ -99,7 +99,7 @@ Happy Coding.
 ![Dash Board](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/dap.png)
 
 * Telescope
-![Dash Board](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/telescope.png)
+![Dash Board](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/telescopeimg.png)
 
 * Python
 ![Dash Board](https://github.com/tonmoy998/Neovim-Coc-Lsp/blob/main/screenshots/python.png)
