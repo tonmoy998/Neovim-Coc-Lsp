@@ -1,0 +1,26 @@
+snippet log "console.log()"
+console.log(${0:${VISUAL}})
+endsnippet
+
+snippet foreach "forEach function"
+forEach((${0:${VISUAL}})=> {
+
+})
+endsnippet
+
+snippet rfce "Recat function component"
+const ${0:${VISUAL}} = ()=> {
+return(
+  <div>
+    ${0:${VISUAL}}
+  </div>
+);
+} 
+export default ${0:${VISUAL}};
+endsnippet
+snippet dqs "document.querySelector()" 
+document.querySelector(${0:${VISUAL}})
+endsnippet
+snippet dqsa "document.querySelectorAll()" 
+document.querySelectorAll(${0:${VISUAL}})
+endsnippet
